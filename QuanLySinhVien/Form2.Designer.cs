@@ -80,6 +80,7 @@
             this.đăngXuâtToolStripMenuItem.Name = "đăngXuâtToolStripMenuItem";
             this.đăngXuâtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.đăngXuâtToolStripMenuItem.Text = "Đăng xuât";
+            this.đăngXuâtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuâtToolStripMenuItem_Click);
             // 
             // quảnLýToolStripMenuItem
             // 
@@ -130,14 +131,14 @@
             // xemThôngBáoToolStripMenuItem
             // 
             this.xemThôngBáoToolStripMenuItem.Name = "xemThôngBáoToolStripMenuItem";
-            this.xemThôngBáoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.xemThôngBáoToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.xemThôngBáoToolStripMenuItem.Text = "Xem thông báo";
             // 
             // tạoThôngBáoToolStripMenuItem
             // 
             this.tạoThôngBáoToolStripMenuItem.Enabled = false;
             this.tạoThôngBáoToolStripMenuItem.Name = "tạoThôngBáoToolStripMenuItem";
-            this.tạoThôngBáoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tạoThôngBáoToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.tạoThôngBáoToolStripMenuItem.Text = "Tạo thông báo";
             // 
             // Form2
@@ -147,7 +148,7 @@
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);

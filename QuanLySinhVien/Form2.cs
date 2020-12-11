@@ -53,5 +53,15 @@ namespace QuanLySinhVien
         {
             
         }
+
+        private void đăngXuâtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            đăngNhậpToolStripMenuItem.Enabled = true;
+            PbanToolStripMenuItem.Enabled = false;
+            nvienToolStripMenuItem.Enabled = false;
+            cviecToolStripMenuItem1.Enabled = false;
+            tạoThôngBáoToolStripMenuItem.Enabled = false;
+            đăngXuâtToolStripMenuItem.Enabled = false;
+        }
     }
 }
