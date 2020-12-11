@@ -38,6 +38,7 @@ namespace QuanLySinhVien
             {
                 foreach (DataRow dr in dt.Rows)
                 {
+                    string c = dr["quyen"].ToString();
                     MessageBox.Show("Dang nhap thanh cong");
                 }
             }
