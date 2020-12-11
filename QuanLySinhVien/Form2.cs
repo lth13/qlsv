@@ -63,5 +63,16 @@ namespace QuanLySinhVien
             tạoThôngBáoToolStripMenuItem.Enabled = false;
             đăngXuâtToolStripMenuItem.Enabled = false;
         }
+
+        private void PbanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormPhongBan wdPr = new FormPhongBan();
+            wdPr.TopLevel = false;
+            this.Controls.Add(wdPr);
+            wdPr.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            wdPr.Dock = DockStyle.Fill;
+            wdPr.BringToFront();
+            wdPr.Show();
+        }
     }
 }
