@@ -19,3 +19,14 @@ C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.
 C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.CoreCompileInputs.cache
 C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
 C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+C:\Users\chidu\Source\Repos\qlsv\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe.config
+C:\Users\chidu\Source\Repos\qlsv\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe
+C:\Users\chidu\Source\Repos\qlsv\QuanLySinhVien\bin\Debug\QuanLySinhVien.pdb
+C:\Users\chidu\Source\Repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.csprojAssemblyReference.cache
+C:\Users\chidu\Source\Repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form1.resources
+C:\Users\chidu\Source\Repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form2.resources
+C:\Users\chidu\Source\Repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Properties.Resources.resources
+C:\Users\chidu\Source\Repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.GenerateResource.cache
+C:\Users\chidu\Source\Repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.CoreCompileInputs.cache
+C:\Users\chidu\Source\Repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
+C:\Users\chidu\Source\Repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb

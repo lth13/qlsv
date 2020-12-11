@@ -13,7 +13,7 @@ namespace QuanLySinhVien
 {
     public partial class Form1 : Form
     {
-        public int c;
+        private int c=3;
         public Form1()
         {
             InitializeComponent();
@@ -23,10 +23,25 @@ namespace QuanLySinhVien
         {
             
         }
-
+        public int Role
+        {
+            get { return c; }
+            set { c = value; }
+        }
+        public event EventHandler DataAvailable;
+        protected virtual void OnDataAvailable(EventArgs e)
+        {
+            EventHandler eh = DataAvailable;
+            if (eh != null)
+            {
+                eh(this, e);
+            }
+        }
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            var conn = new SqlConnection("Data Source=DESKTOP-HJKTD4A;Initial Catalog=QuanLySinhVien;Integrated Security=True");
+            var conn = new SqlConnection("Data Source=DESKTOP-DPKOOS5;Initial Catalog=QuanLySinhVien;Integrated Security=True");
+            //Dũng Database Connection: Data Source=DESKTOP-DPKOOS5;Initial Catalog=QuanLySinhVien;Integrated Security=True
+            //Huỳn Database Connection: Data Source=DESKTOP-HJKTD4A;Initial Catalog=QuanLySinhVien;Integrated Security=True
             conn.Open();
             string a = txbTenDangNhap.Text;
             string b = txbMatKhau.Text;
@@ -42,8 +57,11 @@ namespace QuanLySinhVien
                     Form2 frm2 = new Form2();
                     c = Convert.ToInt32(dr["quyen"].ToString());
                     MessageBox.Show("Dang nhap thanh cong");
+                    if (System.Windows.Forms.Application.OpenForms["Form2"] != null)
+                    {
+                        (System.Windows.Forms.Application.OpenForms["Form2"] as Form2).unlockFunction(c);
+                    }
                     this.Close();
-                    
                 }
             }
             conn.Close();
