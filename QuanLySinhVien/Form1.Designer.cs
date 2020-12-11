@@ -70,19 +70,17 @@
             // 
             this.txbTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbTenDangNhap.Location = new System.Drawing.Point(261, 181);
-            this.txbTenDangNhap.Multiline = true;
             this.txbTenDangNhap.Name = "txbTenDangNhap";
-            this.txbTenDangNhap.Size = new System.Drawing.Size(228, 35);
+            this.txbTenDangNhap.Size = new System.Drawing.Size(228, 30);
             this.txbTenDangNhap.TabIndex = 3;
             // 
             // txbMatKhau
             // 
             this.txbMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbMatKhau.Location = new System.Drawing.Point(261, 250);
-            this.txbMatKhau.Multiline = true;
             this.txbMatKhau.Name = "txbMatKhau";
             this.txbMatKhau.PasswordChar = '*';
-            this.txbMatKhau.Size = new System.Drawing.Size(228, 35);
+            this.txbMatKhau.Size = new System.Drawing.Size(228, 30);
             this.txbMatKhau.TabIndex = 4;
             // 
             // btnDangNhap

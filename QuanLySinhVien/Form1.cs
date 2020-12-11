@@ -13,6 +13,7 @@ namespace QuanLySinhVien
 {
     public partial class Form1 : Form
     {
+        public int c;
         public Form1()
         {
             InitializeComponent();
@@ -38,8 +39,11 @@ namespace QuanLySinhVien
             {
                 foreach (DataRow dr in dt.Rows)
                 {
-                    string c = dr["quyen"].ToString();
+                    Form2 frm2 = new Form2();
+                    c = Convert.ToInt32(dr["quyen"].ToString());
                     MessageBox.Show("Dang nhap thanh cong");
+                    this.Close();
+                    
                 }
             }
             conn.Close();
