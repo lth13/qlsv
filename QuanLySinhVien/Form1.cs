@@ -23,23 +23,46 @@ namespace QuanLySinhVien
         {
             
         }
-        public int Role
+        public string ConnectionString()
         {
-            get { return c; }
-            set { c = value; }
-        }
-        public event EventHandler DataAvailable;
-        protected virtual void OnDataAvailable(EventArgs e)
-        {
-            EventHandler eh = DataAvailable;
-            if (eh != null)
+            string cn1 = "Data Source=DESKTOP-DPKOOS5;Initial Catalog=QuanLySinhVien;Integrated Security=True";
+            string cn2 = "Data Source=DESKTOP-HJKTD4A;Initial Catalog=QuanLySinhVien;Integrated Security=True";
+            string cn3 = "Data Source=DESKTOP-03QADQ3;Initial Catalog=QuanLySinhVien;Integrated Security=True";
+            var conn1 = new SqlConnection(cn1);
+            var conn2 = new SqlConnection(cn2);
+            var conn3 = new SqlConnection(cn3);
+            try
             {
-                eh(this, e);
+                conn1.Open();
+                return cn1;
             }
+            catch
+            {
+                try
+                {
+                    conn2.Open();
+                    return cn2;
+                }
+                catch
+                {
+                    try
+                    {
+                        conn3.Open();
+                        return cn3;
+                    }
+                    catch
+                    {
+                        string cn4 = "false";
+                        return cn4;
+                    }
+                }
+            }
+                
         }
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            var conn = new SqlConnection("Data Source=DESKTOP-DPKOOS5;Initial Catalog=QuanLySinhVien;Integrated Security=True");
+            string cn = ConnectionString();
+            var conn = new SqlConnection(cn);
             //Dũng Database Connection: Data Source=DESKTOP-DPKOOS5;Initial Catalog=QuanLySinhVien;Integrated Security=True
             //Huỳn Database Connection: Data Source=DESKTOP-HJKTD4A;Initial Catalog=QuanLySinhVien;Integrated Security=True
             conn.Open();
