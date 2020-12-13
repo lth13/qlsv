@@ -43,3 +43,7 @@ C:\Users\Dung\Source\Repos\lth13\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.cs
 C:\Users\Dung\Source\Repos\lth13\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.CoreCompileInputs.cache
 C:\Users\Dung\Source\Repos\lth13\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
 C:\Users\Dung\Source\Repos\lth13\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.FormPhongBan.resources
+C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form3.resources
+C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form4.resources
+C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form5.resources

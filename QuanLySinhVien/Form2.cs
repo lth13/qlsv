@@ -66,13 +66,35 @@ namespace QuanLySinhVien
 
         private void PbanToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormPhongBan wdPr = new FormPhongBan();
-            wdPr.TopLevel = false;
-            this.Controls.Add(wdPr);
-            wdPr.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            wdPr.Dock = DockStyle.Fill;
-            wdPr.BringToFront();
-            wdPr.Show();
+            Form4 frm4 = new Form4();
+            frm4.TopLevel = false;
+            this.Controls.Add(frm4);
+            frm4.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            frm4.Dock = DockStyle.Fill;
+            frm4.BringToFront();
+            frm4.Show();
+        }
+
+        private void cáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 frm3 = new Form3();
+            frm3.TopLevel = false;
+            this.Controls.Add(frm3);
+            frm3.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            frm3.Dock = DockStyle.Fill;
+            frm3.BringToFront();
+            frm3.Show();
+        }
+
+        private void nvienToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form5 frm5 = new Form5();
+            frm5.TopLevel = false;
+            this.Controls.Add(frm5);
+            frm5.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            frm5.Dock = DockStyle.Fill;
+            frm5.BringToFront();
+            frm5.Show();
         }
     }
 }
