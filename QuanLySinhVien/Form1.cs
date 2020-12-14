@@ -14,6 +14,9 @@ namespace QuanLySinhVien
     public partial class Form1 : Form
     {
         private int c=3;
+        public string cn;
+        public string username;
+        public int id;
         public Form1()
         {
             InitializeComponent();
@@ -61,7 +64,7 @@ namespace QuanLySinhVien
         }
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            string cn = ConnectionString();
+            cn = ConnectionString();
             var conn = new SqlConnection(cn);
             //Dũng Database Connection: Data Source=DESKTOP-DPKOOS5;Initial Catalog=QuanLySinhVien;Integrated Security=True
             //Huỳn Database Connection: Data Source=DESKTOP-HJKTD4A;Initial Catalog=QuanLySinhVien;Integrated Security=True
@@ -79,11 +82,17 @@ namespace QuanLySinhVien
                 {
                     Form2 frm2 = new Form2();
                     c = Convert.ToInt32(dr["quyen"].ToString());
+                    id = Convert.ToInt32(dr["ID"].ToString());
+                    username = dr["TenDangNhap"].ToString();
                     MessageBox.Show("Dang nhap thanh cong");
                     if (System.Windows.Forms.Application.OpenForms["Form2"] != null)
                     {
                         (System.Windows.Forms.Application.OpenForms["Form2"] as Form2).unlockFunction(c);
                     }
+                    User usr = new User();
+                    usr.Username = username;
+                    usr.Id = id;
+                    usr.Cnn = cn;
                     this.Close();
                 }
             }
