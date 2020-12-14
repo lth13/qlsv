@@ -25,13 +25,12 @@ namespace QuanLySinhVien
         private void getInformation()
         {
             User usr = new User();
+            Connection cnn = new Connection();
             int id = usr.Id;
             string username = usr.Username;
-            string cnn = usr.Cnn;
-            var conn = new SqlConnection(cnn);
-            conn.Open();
-            var query = new SqlCommand("SELECT * FROM ThongTin WHERE UserID="+id+"", conn);
-            using (SqlDataReader SqlRead = query.ExecuteReader())
+            cnn.connect();
+            var query = "SELECT * FROM ThongTin WHERE UserID="+id+"";
+            using (SqlDataReader SqlRead = cnn.getDataReader(query))
             {
                 while (SqlRead.Read())
                 {
@@ -57,9 +56,9 @@ namespace QuanLySinhVien
                     {
                         SqlCommand queries = new SqlCommand("SELECT * FROM PhongBan WHERE ID=@id");
                         queries.Parameters.AddWithValue("@id", pb);
-                        using (SqlDataReader SqlRead2 = queries.ExecuteReader())
+                        using (SqlDataReader SqlRead2 = cnn.getDataReader(queries))
                         {
-                            while (SqlRead.Read())
+                            while (SqlRead2.Read())
                             {
                                 tbxPhongBan.Text = SqlRead["TenPhongBan"].ToString();
                             }
@@ -72,14 +71,14 @@ namespace QuanLySinhVien
                     tbxTenDangNhap.Text = username;
                 }
             }
-            conn.Close();
+            cnn.disconnect();
         }
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void lblTitle_Click(object sender, EventArgs e)
+        private void btnChinhSua_Click(object sender, EventArgs e)
         {
 
         }
