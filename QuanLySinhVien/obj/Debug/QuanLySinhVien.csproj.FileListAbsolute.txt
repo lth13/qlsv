@@ -65,3 +65,4 @@ C:\Users\Dung\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.G
 C:\Users\Dung\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.CoreCompileInputs.cache
 C:\Users\Dung\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
 C:\Users\Dung\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form6.resources

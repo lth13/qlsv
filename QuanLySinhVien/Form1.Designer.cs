@@ -106,7 +106,7 @@
             this.Controls.Add(this.lblTaiKhoan);
             this.Controls.Add(this.lblTitle);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Đăng nhập";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

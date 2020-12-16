@@ -163,6 +163,7 @@ namespace QuanLySinhVien
             this.btnSua.TabIndex = 5;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -187,7 +188,7 @@ namespace QuanLySinhVien
             this.Controls.Add(this.cbxPhongBan);
             this.Controls.Add(this.lblTitle);
             this.Name = "Form5";
-            this.Text = "Form5";
+            this.Text = "Quản lý nhân viên";
             this.ResumeLayout(false);
             this.PerformLayout();
 

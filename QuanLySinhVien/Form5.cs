@@ -16,5 +16,15 @@ namespace QuanLySinhVien
         {
             InitializeComponent();
         }
-    }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            Form3 frm3 = new Form3();
+            
+            if (System.Windows.Forms.Application.OpenForms["Form3"] != null)
+            {
+                (System.Windows.Forms.Application.OpenForms["Form3"] as Form2).unlockFunction(c);
+            }
+            frm3.Show();
+        }
 }

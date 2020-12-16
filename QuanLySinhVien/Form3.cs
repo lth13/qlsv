@@ -80,7 +80,19 @@ namespace QuanLySinhVien
 
         private void btnChinhSua_Click(object sender, EventArgs e)
         {
+            btnChinhSua.Visible = false;
+            tbxNgaySinh.Enabled = true;
+            tbxQueQuan.Enabled = true;
+            tbxSoDienThoai.Enabled = true;
+            tbxDiaChi.Enabled = true;
+            tbxEmail.Enabled = true;
+            btnLuu.Visible = true;
+        }
 
+        private void btnDoiMatKhau_Click(object sender, EventArgs e)
+        {
+            Form6 frm6 = new Form6();
+            frm6.Show();
         }
     }
 }
