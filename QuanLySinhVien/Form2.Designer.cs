@@ -116,6 +116,7 @@
             this.cviecToolStripMenuItem1.Name = "cviecToolStripMenuItem1";
             this.cviecToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
             this.cviecToolStripMenuItem1.Text = "Công việc";
+            this.cviecToolStripMenuItem1.Click += new System.EventHandler(this.cviecToolStripMenuItem1_Click);
             // 
             // cáNhânToolStripMenuItem
             // 
@@ -136,14 +137,14 @@
             // xemThôngBáoToolStripMenuItem
             // 
             this.xemThôngBáoToolStripMenuItem.Name = "xemThôngBáoToolStripMenuItem";
-            this.xemThôngBáoToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.xemThôngBáoToolStripMenuItem.Size = new System.Drawing.Size(213, 28);
             this.xemThôngBáoToolStripMenuItem.Text = "Xem thông báo";
             // 
             // tạoThôngBáoToolStripMenuItem
             // 
             this.tạoThôngBáoToolStripMenuItem.Enabled = false;
             this.tạoThôngBáoToolStripMenuItem.Name = "tạoThôngBáoToolStripMenuItem";
-            this.tạoThôngBáoToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.tạoThôngBáoToolStripMenuItem.Size = new System.Drawing.Size(213, 28);
             this.tạoThôngBáoToolStripMenuItem.Text = "Tạo thông báo";
             this.tạoThôngBáoToolStripMenuItem.Click += new System.EventHandler(this.tạoThôngBáoToolStripMenuItem_Click);
             // 

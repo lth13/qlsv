@@ -107,5 +107,16 @@ namespace QuanLySinhVien
             frm7.BringToFront();
             frm7.Show();
         }
+
+        private void cviecToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form8 frm8 = new Form8();
+            frm8.TopLevel = false;
+            this.Controls.Add(frm8);
+            frm8.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            frm8.Dock = DockStyle.Fill;
+            frm8.BringToFront();
+            frm8.Show();
+        }
     }
 }

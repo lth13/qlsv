@@ -65,7 +65,7 @@ namespace QuanLySinhVien
             "Phòng kế toán",
             "Phòng sale",
             "Phòng kỹ thuật"});
-            this.cbxPhongBan.Location = new System.Drawing.Point(442, 109);
+            this.cbxPhongBan.Location = new System.Drawing.Point(444, 109);
             this.cbxPhongBan.Name = "cbxPhongBan";
             this.cbxPhongBan.Size = new System.Drawing.Size(196, 33);
             this.cbxPhongBan.TabIndex = 1;
