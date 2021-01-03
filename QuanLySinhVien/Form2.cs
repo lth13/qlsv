@@ -96,5 +96,16 @@ namespace QuanLySinhVien
             frm5.BringToFront();
             frm5.Show();
         }
+
+        private void tạoThôngBáoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form7 frm7 = new Form7();
+            frm7.TopLevel = false;
+            this.Controls.Add(frm7);
+            frm7.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            frm7.Dock = DockStyle.Fill;
+            frm7.BringToFront();
+            frm7.Show();
+        }
     }
 }

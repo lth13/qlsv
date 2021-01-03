@@ -20,7 +20,7 @@ namespace QuanLySinhVien
         {
             if (conn == null)
             {
-                conn = new SqlConnection(cn1);
+                conn = new SqlConnection(cn2);
             }
             if (conn.State == System.Data.ConnectionState.Closed)
             {
@@ -63,7 +63,7 @@ namespace QuanLySinhVien
             SqlDataReader dr = com.ExecuteReader();
             return dr;
         }
-        public SqlDataReader getDataReader2(SqlCommand command)
+        public SqlDataReader getDataReader(SqlCommand command)
         {
             connect();
             SqlDataReader dr = command.ExecuteReader();

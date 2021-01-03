@@ -72,7 +72,7 @@
             // đăngNhậpToolStripMenuItem
             // 
             this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
-            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(179, 28);
             this.đăngNhậpToolStripMenuItem.Text = "Đăng nhập";
             this.đăngNhậpToolStripMenuItem.Click += new System.EventHandler(this.đăngNhậpToolStripMenuItem_Click);
             // 
@@ -80,7 +80,7 @@
             // 
             this.đăngXuâtToolStripMenuItem.Enabled = false;
             this.đăngXuâtToolStripMenuItem.Name = "đăngXuâtToolStripMenuItem";
-            this.đăngXuâtToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.đăngXuâtToolStripMenuItem.Size = new System.Drawing.Size(179, 28);
             this.đăngXuâtToolStripMenuItem.Text = "Đăng xuât";
             this.đăngXuâtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuâtToolStripMenuItem_Click);
             // 
@@ -136,15 +136,16 @@
             // xemThôngBáoToolStripMenuItem
             // 
             this.xemThôngBáoToolStripMenuItem.Name = "xemThôngBáoToolStripMenuItem";
-            this.xemThôngBáoToolStripMenuItem.Size = new System.Drawing.Size(213, 28);
+            this.xemThôngBáoToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.xemThôngBáoToolStripMenuItem.Text = "Xem thông báo";
             // 
             // tạoThôngBáoToolStripMenuItem
             // 
             this.tạoThôngBáoToolStripMenuItem.Enabled = false;
             this.tạoThôngBáoToolStripMenuItem.Name = "tạoThôngBáoToolStripMenuItem";
-            this.tạoThôngBáoToolStripMenuItem.Size = new System.Drawing.Size(213, 28);
+            this.tạoThôngBáoToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.tạoThôngBáoToolStripMenuItem.Text = "Tạo thông báo";
+            this.tạoThôngBáoToolStripMenuItem.Click += new System.EventHandler(this.tạoThôngBáoToolStripMenuItem_Click);
             // 
             // Form2
             // 

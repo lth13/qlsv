@@ -54,13 +54,12 @@ namespace QuanLySinhVien
                     }
                     else
                     {
-                        SqlCommand queries = new SqlCommand("SELECT * FROM PhongBan WHERE ID=@id");
-                        queries.Parameters.AddWithValue("@id", pb);
-                        using (SqlDataReader SqlRead2 = cnn.getDataReader2(queries))
+                        var qr2 = "SELECT * FROM PhongBan WHERE ID="+id+"";
+                        using (SqlDataReader SqlRead2 = cnn.getDataReader(qr2))
                         {
                             while (SqlRead2.Read())
                             {
-                                tbxPhongBan.Text = SqlRead["TenPhongBan"].ToString();
+                                tbxPhongBan.Text = SqlRead2["TenPhongBan"].ToString();
                             }
                         }
                     }
