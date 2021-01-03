@@ -54,8 +54,8 @@ namespace QuanLySinhVien
                     }
                     else
                     {
-                        var qr2 = "SELECT * FROM PhongBan WHERE ID="+id+"";
-                        using (SqlDataReader SqlRead2 = cnn.getDataReader(qr2))
+                        var queries = "SELECT * FROM PhongBan WHERE ID='"+id+"'";
+                        using (SqlDataReader SqlRead2 = cnn.getDataReader(queries))
                         {
                             while (SqlRead2.Read())
                             {
@@ -92,6 +92,32 @@ namespace QuanLySinhVien
         {
             Form6 frm6 = new Form6();
             frm6.Show();
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            User usr = new User();
+            Connection cnn = new Connection();
+            int id = usr.Id;
+            string username = usr.Username;
+            cnn.connect();
+            var sql ="Update ThongTin Set NgaySinh = "+"tbxNgaySinh.Text"+", QueQuan = " + "tbxQueQuan.Text" + ",SoDienThoai = " + "tbxSoDienThoai.Text" + ",DiaChi = " + "tbxDiaChi.Text" + ",Email =" + "tbxEmail.Text" + " WHERE ID = " + id + "";
+            int i = cnn.ExecuteNonQuery(sql);
+            if (i == 0)
+            {
+                MessageBox.Show("Cap nhat that bai vui long thu lai!");
+            }
+            else
+            {
+                MessageBox.Show("Cap nhat thanh cong!");
+                btnChinhSua.Visible = true;
+                tbxNgaySinh.Enabled = false;
+                tbxQueQuan.Enabled = false;
+                tbxSoDienThoai.Enabled = false;
+                tbxDiaChi.Enabled = false;
+                tbxEmail.Enabled = false;
+                btnLuu.Visible = false;
+            }
         }
     }
 }

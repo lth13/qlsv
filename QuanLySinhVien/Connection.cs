@@ -43,18 +43,16 @@ namespace QuanLySinhVien
             disconnect();
             return dt;
         }
-        public void ExecuteNonQuery(string sql)
+        public int ExecuteNonQuery(string sql)
         {
             connect();
             SqlCommand cmd = new SqlCommand(sql, conn);
-            cmd.ExecuteNonQuery();
-            disconnect();
+            return cmd.ExecuteNonQuery();
         }
-        public void ExecuteNonQuery(SqlCommand sqlcommand)
+        public int ExecuteNonQuery(SqlCommand sqlcommand)
         {
             connect();
-            sqlcommand.ExecuteNonQuery();
-            disconnect();
+            return sqlcommand.ExecuteNonQuery();
         }
         public SqlDataReader getDataReader(string sql)
         {
