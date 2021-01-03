@@ -56,7 +56,7 @@ namespace QuanLySinhVien
                     {
                         SqlCommand queries = new SqlCommand("SELECT * FROM PhongBan WHERE ID=@id");
                         queries.Parameters.AddWithValue("@id", pb);
-                        using (SqlDataReader SqlRead2 = cnn.getDataReader(queries))
+                        using (SqlDataReader SqlRead2 = cnn.getDataReader2(queries))
                         {
                             while (SqlRead2.Read())
                             {

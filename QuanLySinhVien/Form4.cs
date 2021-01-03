@@ -42,15 +42,28 @@ namespace QuanLySinhVien
         {
             Connection cnn = new Connection();
             cnn.connect();
-            var query ="SELECT * FROM PhongBan WHERE TenPhongBan = '"+comboBox1.Text+"'";
+            int id=0;
+            if(comboBox1.Text=="Phòng kế toán")
+            {
+                id=1;
+            }
+            if (comboBox1.Text == "Phòng sale")
+            {
+                id=2;
+            }
+            if (comboBox1.Text == "Phòng kỹ thuật")
+            {
+                id=3;
+            }
+            var query = "SELECT * FROM PhongBan WHERE ID = "+id+"";
             using (SqlDataReader SqlRead = cnn.getDataReader(query))
             {
                 while (SqlRead.Read())
                 {
                     txbID.Text = SqlRead["ID"].ToString();
-                    int id = Convert.ToInt32(SqlRead["IDLeader"].ToString());
-                    var query2 = "SELECT * FROM ThongTin WHERE ID = " + id + "";
-                    using (SqlDataReader SqlRead2 = cnn.getDataReader(query2))
+                    int id2 = Convert.ToInt32(SqlRead["IDLeader"].ToString());
+                    var queries2 = "SELECT * FROM ThongTin WHERE ID = " + id2 + "";
+                    using (SqlDataReader SqlRead2 = cnn.getDataReader(queries2))
                     {
                         while (SqlRead2.Read())
                         {
@@ -59,6 +72,7 @@ namespace QuanLySinhVien
                     }
                 }
             }
+            cnn.disconnect();
         }
     }
 }
