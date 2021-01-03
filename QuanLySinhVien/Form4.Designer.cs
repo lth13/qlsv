@@ -45,9 +45,10 @@ namespace QuanLySinhVien
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(356, 38);
+            this.lblTitle.Location = new System.Drawing.Point(267, 31);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(330, 32);
+            this.lblTitle.Size = new System.Drawing.Size(266, 26);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "QUẢN LÝ PHÒNG BAN";
             // 
@@ -59,18 +60,21 @@ namespace QuanLySinhVien
             "Phòng kế toán",
             "Phòng sale",
             "Phòng kỹ thuật"});
-            this.comboBox1.Location = new System.Drawing.Point(466, 111);
+            this.comboBox1.Location = new System.Drawing.Point(350, 90);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(240, 33);
+            this.comboBox1.Size = new System.Drawing.Size(181, 28);
             this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
             // lblPhongBan
             // 
             this.lblPhongBan.AutoSize = true;
             this.lblPhongBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhongBan.Location = new System.Drawing.Point(319, 116);
+            this.lblPhongBan.Location = new System.Drawing.Point(239, 94);
+            this.lblPhongBan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPhongBan.Name = "lblPhongBan";
-            this.lblPhongBan.Size = new System.Drawing.Size(123, 25);
+            this.lblPhongBan.Size = new System.Drawing.Size(98, 20);
             this.lblPhongBan.TabIndex = 2;
             this.lblPhongBan.Text = "Phòng ban : ";
             // 
@@ -80,9 +84,11 @@ namespace QuanLySinhVien
             this.grbThongTin.Controls.Add(this.lblQuanLy);
             this.grbThongTin.Controls.Add(this.txbID);
             this.grbThongTin.Controls.Add(this.lblID);
-            this.grbThongTin.Location = new System.Drawing.Point(186, 184);
+            this.grbThongTin.Location = new System.Drawing.Point(140, 150);
+            this.grbThongTin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbThongTin.Name = "grbThongTin";
-            this.grbThongTin.Size = new System.Drawing.Size(658, 107);
+            this.grbThongTin.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbThongTin.Size = new System.Drawing.Size(494, 87);
             this.grbThongTin.TabIndex = 3;
             this.grbThongTin.TabStop = false;
             this.grbThongTin.Text = "Thông tin phòng ban";
@@ -90,18 +96,20 @@ namespace QuanLySinhVien
             // txbQuanLy
             // 
             this.txbQuanLy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbQuanLy.Location = new System.Drawing.Point(439, 44);
+            this.txbQuanLy.Location = new System.Drawing.Point(329, 36);
+            this.txbQuanLy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbQuanLy.Name = "txbQuanLy";
-            this.txbQuanLy.Size = new System.Drawing.Size(175, 30);
+            this.txbQuanLy.Size = new System.Drawing.Size(132, 26);
             this.txbQuanLy.TabIndex = 3;
             // 
             // lblQuanLy
             // 
             this.lblQuanLy.AutoSize = true;
             this.lblQuanLy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuanLy.Location = new System.Drawing.Point(275, 47);
+            this.lblQuanLy.Location = new System.Drawing.Point(206, 38);
+            this.lblQuanLy.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQuanLy.Name = "lblQuanLy";
-            this.lblQuanLy.Size = new System.Drawing.Size(147, 25);
+            this.lblQuanLy.Size = new System.Drawing.Size(116, 20);
             this.lblQuanLy.TabIndex = 2;
             this.lblQuanLy.Text = "Người quản lý : ";
             this.lblQuanLy.Click += new System.EventHandler(this.label1_Click);
@@ -109,9 +117,10 @@ namespace QuanLySinhVien
             // txbID
             // 
             this.txbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbID.Location = new System.Drawing.Point(78, 41);
+            this.txbID.Location = new System.Drawing.Point(58, 33);
+            this.txbID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbID.Name = "txbID";
-            this.txbID.Size = new System.Drawing.Size(166, 30);
+            this.txbID.Size = new System.Drawing.Size(126, 26);
             this.txbID.TabIndex = 1;
             this.txbID.TextChanged += new System.EventHandler(this.txbID_TextChanged);
             // 
@@ -119,31 +128,35 @@ namespace QuanLySinhVien
             // 
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(25, 47);
+            this.lblID.Location = new System.Drawing.Point(19, 38);
+            this.lblID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(47, 25);
+            this.lblID.Size = new System.Drawing.Size(38, 20);
             this.lblID.TabIndex = 0;
             this.lblID.Text = "ID : ";
             // 
             // grbCongViec
             // 
-            this.grbCongViec.Location = new System.Drawing.Point(186, 332);
+            this.grbCongViec.Location = new System.Drawing.Point(140, 270);
+            this.grbCongViec.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbCongViec.Name = "grbCongViec";
-            this.grbCongViec.Size = new System.Drawing.Size(658, 348);
+            this.grbCongViec.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbCongViec.Size = new System.Drawing.Size(494, 283);
             this.grbCongViec.TabIndex = 4;
             this.grbCongViec.TabStop = false;
             this.grbCongViec.Text = "Thông tin công việc";
             // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 763);
+            this.ClientSize = new System.Drawing.Size(760, 609);
             this.Controls.Add(this.grbCongViec);
             this.Controls.Add(this.grbThongTin);
             this.Controls.Add(this.lblPhongBan);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblTitle);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form4";
             this.Text = "Quản lý phòng ban";
             this.grbThongTin.ResumeLayout(false);

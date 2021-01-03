@@ -13,14 +13,14 @@ namespace QuanLySinhVien
         /* Hello gympie nhen để connect nhanh hơn thì cậu hay thay cái phần conn = new SqlConnection(cn1) thay
          * cn1 thành biến máy cậu là cn2 nhá.Chú thích cn1 = laptop của Dũng nè,cn2 = laptop của Huỳn nè, cn3 = PC của Dũng nè,
          * nhớ nhá.:3 */
-        string cn1 = "Data Source=DESKTOP-DPKOOS5;Initial Catalog=QuanLySinhVien;Integrated Security=True";
+        string cn1 = "Data Source=DESKTOP-03QADQ3;Initial Catalog=QuanLySinhVien;Integrated Security=True";
         string cn2 = "Data Source=DESKTOP-HJKTD4A;Initial Catalog=QuanLySinhVien;Integrated Security=True";
         string cn3 = "Data Source=DESKTOP-N7SL8B9;Initial Catalog=QuanLySinhVien;Integrated Security=True";
         public void connect()
         {
             if (conn == null)
             {
-                conn = new SqlConnection(cn3);
+                conn = new SqlConnection(cn1);
             }
             if (conn.State == System.Data.ConnectionState.Closed)
             {
