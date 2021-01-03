@@ -15,12 +15,12 @@ namespace QuanLySinhVien
          * nhớ nhá.:3 */
         string cn1 = "Data Source=DESKTOP-DPKOOS5;Initial Catalog=QuanLySinhVien;Integrated Security=True";
         string cn2 = "Data Source=DESKTOP-HJKTD4A;Initial Catalog=QuanLySinhVien;Integrated Security=True";
-        string cn3 = "Data Source=DESKTOP-03QADQ3;Initial Catalog=QuanLySinhVien;Integrated Security=True";
+        string cn3 = "Data Source=DESKTOP-N7SL8B9;Initial Catalog=QuanLySinhVien;Integrated Security=True";
         public void connect()
         {
             if (conn == null)
             {
-                conn = new SqlConnection(cn2);
+                conn = new SqlConnection(cn3);
             }
             if (conn.State == System.Data.ConnectionState.Closed)
             {
