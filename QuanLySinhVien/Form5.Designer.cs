@@ -71,6 +71,7 @@ namespace QuanLySinhVien
             this.cbxPhongBan.Name = "cbxPhongBan";
             this.cbxPhongBan.Size = new System.Drawing.Size(148, 28);
             this.cbxPhongBan.TabIndex = 1;
+            this.cbxPhongBan.SelectedIndexChanged += new System.EventHandler(this.cbxPhongBan_SelectedIndexChanged);
             // 
             // lblPhongBan
             // 

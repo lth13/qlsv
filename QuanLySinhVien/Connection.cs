@@ -65,6 +65,7 @@ namespace QuanLySinhVien
         public SqlDataReader getDataReader(SqlCommand command)
         {
             connect();
+            command.Connection = conn;
             SqlDataReader dr = command.ExecuteReader();
             return dr;
         }
