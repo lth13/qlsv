@@ -25,6 +25,7 @@ namespace QuanLySinhVien
         {
             User usr = new User();
             listView1.FullRowSelect = true;
+            listView1.Items.Clear();
             Connection cnn = new Connection();
             int id = usr.Id;
             string username = usr.Username;
@@ -91,16 +92,24 @@ namespace QuanLySinhVien
             if (cbxPhongBan.Text == "Phòng kế toán")
             {
                 id = 1;
+                getInfo(id);
+
             }
             if (cbxPhongBan.Text == "Phòng sale")
             {
                 id = 2;
+                getInfo(id);
+
             }
             if (cbxPhongBan.Text == "Phòng kỹ thuật")
             {
                 id = 3;
+                getInfo(id);
             }
-            getInfo(id);
+            if (cbxPhongBan.Text == "Tất cả")
+            {
+                getInformation();
+            }
         }
     }
 }

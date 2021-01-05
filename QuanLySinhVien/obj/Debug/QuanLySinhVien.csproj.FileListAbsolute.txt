@@ -75,3 +75,4 @@ C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form5.r
 C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form6.resources
 C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form7.resources
 C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form8.resources
+C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form9.resources

@@ -13,6 +13,7 @@ namespace QuanLySinhVien
 {
     public partial class Form5 : Form
     {
+        public static int iddong;
         public Form5()
         {
             InitializeComponent();
@@ -78,6 +79,8 @@ namespace QuanLySinhVien
         }
         private void btnSua_Click(object sender, EventArgs e)
         {
+            Form9 frm9 = new Form9();
+            frm9.Show();
         }
 
         private void cbxPhongBan_SelectedIndexChanged(object sender, EventArgs e)
@@ -96,6 +99,51 @@ namespace QuanLySinhVien
                 id = 3;
             }
             getInfo(id);
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            String tk = tbxTimKiem.Text.Trim();
+            User usr = new User();
+            listView1.FullRowSelect = true;
+            Connection cnn = new Connection();
+            cnn.connect();
+            listView1.Items.Clear();
+            string sql = ("SELECT ID,HoTen,NgaySinh,GioiTinh,QueQuan,SoDienThoai,DiaChi,Email,ChucVu FROM ThongTin WHERE (HoTen LIKE \'%" + (tk + "%\')"));
+            using (SqlDataReader SqlRead = cnn.getDataReader(sql))
+            {
+                while (SqlRead.Read())
+                {
+                    ListViewItem lv = new ListViewItem(SqlRead.GetInt32(0).ToString());
+                    lv.SubItems.Add(SqlRead.GetString(1).ToString());
+                    lv.SubItems.Add(SqlRead.GetDateTime(2).ToString());
+                    lv.SubItems.Add(SqlRead.GetString(3).ToString());
+                    lv.SubItems.Add(SqlRead.GetString(4).ToString());
+                    lv.SubItems.Add(SqlRead.GetInt32(5).ToString());
+                    lv.SubItems.Add(SqlRead.GetString(6).ToString());
+                    lv.SubItems.Add(SqlRead.GetString(7).ToString());
+                    lv.SubItems.Add(SqlRead.GetString(8).ToString());
+                    listView1.Items.Add(lv);
+                }
+            }
+            cnn.disconnect();
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count > 0)
+            {
+                ListViewItem item = listView1.SelectedItems[0];
+                iddong = Convert.ToInt32(item.SubItems[0].Text);
+                lblTimKiem.Text = item.SubItems[0].Text;
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            iddong = 0;
+            Form9 frm9 = new Form9();
+            frm9.Show();
         }
     }
 }

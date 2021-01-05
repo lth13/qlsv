@@ -62,6 +62,13 @@ namespace QuanLySinhVien
             cviecToolStripMenuItem1.Enabled = false;
             tạoThôngBáoToolStripMenuItem.Enabled = false;
             đăngXuâtToolStripMenuItem.Enabled = false;
+            FormPhongBan frm4 = new FormPhongBan();
+            frm4.TopLevel = false;
+            this.Controls.Add(frm4);
+            frm4.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            frm4.Dock = DockStyle.Fill;
+            frm4.BringToFront();
+            frm4.Show();
         }
 
         private void PbanToolStripMenuItem_Click(object sender, EventArgs e)
