@@ -20,7 +20,7 @@ namespace QuanLySinhVien
         {
             if (conn == null)
             {
-                conn = new SqlConnection(cn2);
+                conn = new SqlConnection(cn3);
             }
             if (conn.State == System.Data.ConnectionState.Closed)
             {
@@ -51,6 +51,7 @@ namespace QuanLySinhVien
         }
         public int ExecuteNonQuery(SqlCommand sqlcommand)
         {
+            sqlcommand.Connection = conn;
             connect();
             return sqlcommand.ExecuteNonQuery();
         }

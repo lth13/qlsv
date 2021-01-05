@@ -69,3 +69,9 @@ C:\Users\Dung\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form6.re
 C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form7.resources
 C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.csprojAssemblyReference.cache
 C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form8.resources
+C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form3.resources
+C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form4.resources
+C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form5.resources
+C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form6.resources
+C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form7.resources
+C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form8.resources

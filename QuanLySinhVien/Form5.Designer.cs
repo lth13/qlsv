@@ -51,9 +51,10 @@ namespace QuanLySinhVien
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(325, 47);
+            this.lblTitle.Location = new System.Drawing.Point(244, 38);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(313, 32);
+            this.lblTitle.Size = new System.Drawing.Size(254, 26);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "QUẢN LÝ NHÂN VIÊN";
             // 
@@ -65,18 +66,20 @@ namespace QuanLySinhVien
             "Phòng kế toán",
             "Phòng sale",
             "Phòng kỹ thuật"});
-            this.cbxPhongBan.Location = new System.Drawing.Point(444, 109);
+            this.cbxPhongBan.Location = new System.Drawing.Point(333, 89);
+            this.cbxPhongBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbxPhongBan.Name = "cbxPhongBan";
-            this.cbxPhongBan.Size = new System.Drawing.Size(196, 33);
+            this.cbxPhongBan.Size = new System.Drawing.Size(148, 28);
             this.cbxPhongBan.TabIndex = 1;
             // 
             // lblPhongBan
             // 
             this.lblPhongBan.AutoSize = true;
             this.lblPhongBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhongBan.Location = new System.Drawing.Point(313, 112);
+            this.lblPhongBan.Location = new System.Drawing.Point(235, 91);
+            this.lblPhongBan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPhongBan.Name = "lblPhongBan";
-            this.lblPhongBan.Size = new System.Drawing.Size(123, 25);
+            this.lblPhongBan.Size = new System.Drawing.Size(98, 20);
             this.lblPhongBan.TabIndex = 2;
             this.lblPhongBan.Text = "Phòng ban : ";
             // 
@@ -93,9 +96,10 @@ namespace QuanLySinhVien
             this.colEmail,
             this.colChucVu});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(63, 178);
+            this.listView1.Location = new System.Drawing.Point(47, 145);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(914, 372);
+            this.listView1.Size = new System.Drawing.Size(686, 303);
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -147,9 +151,10 @@ namespace QuanLySinhVien
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(647, 579);
+            this.btnThem.Location = new System.Drawing.Point(485, 470);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(106, 41);
+            this.btnThem.Size = new System.Drawing.Size(80, 33);
             this.btnThem.TabIndex = 4;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -157,9 +162,10 @@ namespace QuanLySinhVien
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(759, 579);
+            this.btnSua.Location = new System.Drawing.Point(569, 470);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(106, 41);
+            this.btnSua.Size = new System.Drawing.Size(80, 33);
             this.btnSua.TabIndex = 5;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -168,18 +174,19 @@ namespace QuanLySinhVien
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(871, 579);
+            this.btnXoa.Location = new System.Drawing.Point(653, 470);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(106, 41);
+            this.btnXoa.Size = new System.Drawing.Size(80, 33);
             this.btnXoa.TabIndex = 6;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1034, 655);
+            this.ClientSize = new System.Drawing.Size(776, 532);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
@@ -187,8 +194,10 @@ namespace QuanLySinhVien
             this.Controls.Add(this.lblPhongBan);
             this.Controls.Add(this.cbxPhongBan);
             this.Controls.Add(this.lblTitle);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form5";
             this.Text = "Quản lý nhân viên";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

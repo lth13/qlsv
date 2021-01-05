@@ -101,7 +101,18 @@ namespace QuanLySinhVien
             int id = usr.Id;
             string username = usr.Username;
             cnn.connect();
-            var sql ="Update ThongTin Set NgaySinh = "+"tbxNgaySinh.Text"+", QueQuan = " + "tbxQueQuan.Text" + ",SoDienThoai = " + "tbxSoDienThoai.Text" + ",DiaChi = " + "tbxDiaChi.Text" + ",Email =" + "tbxEmail.Text" + " WHERE ID = " + id + "";
+            String a = tbxNgaySinh.Text.Trim();
+            String b = tbxQueQuan.Text.Trim();
+            String c = tbxSoDienThoai.Text.Trim();
+            String d = tbxDiaChi.Text.Trim();
+            String ef = tbxEmail.Text.Trim();
+            SqlCommand sql =new SqlCommand("Update ThongTin Set NgaySinh = @a, QueQuan = @b ,SoDienThoai = @c ,DiaChi = @d ,Email = @ef WHERE ID = @id");
+            sql.Parameters.AddWithValue("@a", a);
+            sql.Parameters.AddWithValue("@b", b);
+            sql.Parameters.AddWithValue("@c", c);
+            sql.Parameters.AddWithValue("@d", d);
+            sql.Parameters.AddWithValue("@ef", ef);
+            sql.Parameters.AddWithValue("@id", id);
             int i = cnn.ExecuteNonQuery(sql);
             if (i == 0)
             {
