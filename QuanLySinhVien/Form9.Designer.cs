@@ -187,7 +187,7 @@ namespace QuanLySinhVien
             // 
             this.tbxHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxHoTen.Location = new System.Drawing.Point(253, 57);
-            this.tbxHoTen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxHoTen.Margin = new System.Windows.Forms.Padding(2);
             this.tbxHoTen.Name = "tbxHoTen";
             this.tbxHoTen.Size = new System.Drawing.Size(126, 26);
             this.tbxHoTen.TabIndex = 13;
@@ -196,7 +196,7 @@ namespace QuanLySinhVien
             // 
             this.tbxNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxNgaySinh.Location = new System.Drawing.Point(482, 57);
-            this.tbxNgaySinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxNgaySinh.Margin = new System.Windows.Forms.Padding(2);
             this.tbxNgaySinh.Name = "tbxNgaySinh";
             this.tbxNgaySinh.Size = new System.Drawing.Size(126, 26);
             this.tbxNgaySinh.TabIndex = 14;
@@ -205,7 +205,7 @@ namespace QuanLySinhVien
             // 
             this.tbxQueQuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxQueQuan.Location = new System.Drawing.Point(364, 108);
-            this.tbxQueQuan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxQueQuan.Margin = new System.Windows.Forms.Padding(2);
             this.tbxQueQuan.Name = "tbxQueQuan";
             this.tbxQueQuan.Size = new System.Drawing.Size(243, 26);
             this.tbxQueQuan.TabIndex = 15;
@@ -214,7 +214,7 @@ namespace QuanLySinhVien
             // 
             this.tbxSoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxSoDienThoai.Location = new System.Drawing.Point(134, 162);
-            this.tbxSoDienThoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxSoDienThoai.Margin = new System.Windows.Forms.Padding(2);
             this.tbxSoDienThoai.Name = "tbxSoDienThoai";
             this.tbxSoDienThoai.Size = new System.Drawing.Size(116, 26);
             this.tbxSoDienThoai.TabIndex = 16;
@@ -223,7 +223,7 @@ namespace QuanLySinhVien
             // 
             this.tbxDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxDiaChi.Location = new System.Drawing.Point(364, 165);
-            this.tbxDiaChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxDiaChi.Margin = new System.Windows.Forms.Padding(2);
             this.tbxDiaChi.Name = "tbxDiaChi";
             this.tbxDiaChi.Size = new System.Drawing.Size(243, 26);
             this.tbxDiaChi.TabIndex = 17;
@@ -232,7 +232,7 @@ namespace QuanLySinhVien
             // 
             this.tbxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxEmail.Location = new System.Drawing.Point(82, 219);
-            this.tbxEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxEmail.Margin = new System.Windows.Forms.Padding(2);
             this.tbxEmail.Name = "tbxEmail";
             this.tbxEmail.Size = new System.Drawing.Size(98, 26);
             this.tbxEmail.TabIndex = 18;
@@ -240,10 +240,9 @@ namespace QuanLySinhVien
             // tbxTenDangNhap
             // 
             this.tbxTenDangNhap.BackColor = System.Drawing.SystemColors.Window;
-            this.tbxTenDangNhap.Enabled = false;
             this.tbxTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxTenDangNhap.Location = new System.Drawing.Point(148, 47);
-            this.tbxTenDangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxTenDangNhap.Margin = new System.Windows.Forms.Padding(2);
             this.tbxTenDangNhap.Name = "tbxTenDangNhap";
             this.tbxTenDangNhap.Size = new System.Drawing.Size(135, 26);
             this.tbxTenDangNhap.TabIndex = 20;
@@ -252,7 +251,7 @@ namespace QuanLySinhVien
             // 
             this.txbMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbMatKhau.Location = new System.Drawing.Point(460, 46);
-            this.txbMatKhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbMatKhau.Margin = new System.Windows.Forms.Padding(2);
             this.txbMatKhau.Name = "txbMatKhau";
             this.txbMatKhau.Size = new System.Drawing.Size(144, 26);
             this.txbMatKhau.TabIndex = 21;
@@ -261,7 +260,7 @@ namespace QuanLySinhVien
             // 
             this.btnChinhSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChinhSua.Location = new System.Drawing.Point(264, 511);
-            this.btnChinhSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChinhSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnChinhSua.Name = "btnChinhSua";
             this.btnChinhSua.Size = new System.Drawing.Size(193, 32);
             this.btnChinhSua.TabIndex = 22;
@@ -274,7 +273,7 @@ namespace QuanLySinhVien
             this.rdbNam.AutoSize = true;
             this.rdbNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbNam.Location = new System.Drawing.Point(94, 112);
-            this.rdbNam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbNam.Margin = new System.Windows.Forms.Padding(2);
             this.rdbNam.Name = "rdbNam";
             this.rdbNam.Size = new System.Drawing.Size(60, 24);
             this.rdbNam.TabIndex = 24;
@@ -287,7 +286,7 @@ namespace QuanLySinhVien
             this.rdbNu.AutoSize = true;
             this.rdbNu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbNu.Location = new System.Drawing.Point(182, 110);
-            this.rdbNu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbNu.Margin = new System.Windows.Forms.Padding(2);
             this.rdbNu.Name = "rdbNu";
             this.rdbNu.Size = new System.Drawing.Size(47, 24);
             this.rdbNu.TabIndex = 25;
@@ -319,9 +318,9 @@ namespace QuanLySinhVien
             this.grbThongTinChung.Controls.Add(this.tbxHoTen);
             this.grbThongTinChung.Controls.Add(this.tbxNgaySinh);
             this.grbThongTinChung.Location = new System.Drawing.Point(42, 71);
-            this.grbThongTinChung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbThongTinChung.Margin = new System.Windows.Forms.Padding(2);
             this.grbThongTinChung.Name = "grbThongTinChung";
-            this.grbThongTinChung.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbThongTinChung.Padding = new System.Windows.Forms.Padding(2);
             this.grbThongTinChung.Size = new System.Drawing.Size(672, 294);
             this.grbThongTinChung.TabIndex = 26;
             this.grbThongTinChung.TabStop = false;
@@ -337,7 +336,7 @@ namespace QuanLySinhVien
             "Phòng sale",
             "Phòng kỹ thuật"});
             this.cbxPhongBan.Location = new System.Drawing.Point(280, 219);
-            this.cbxPhongBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxPhongBan.Margin = new System.Windows.Forms.Padding(2);
             this.cbxPhongBan.Name = "cbxPhongBan";
             this.cbxPhongBan.Size = new System.Drawing.Size(120, 28);
             this.cbxPhongBan.TabIndex = 1;
@@ -347,7 +346,7 @@ namespace QuanLySinhVien
             // 
             this.tbxChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxChucVu.Location = new System.Drawing.Point(482, 216);
-            this.tbxChucVu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxChucVu.Margin = new System.Windows.Forms.Padding(2);
             this.tbxChucVu.Name = "tbxChucVu";
             this.tbxChucVu.Size = new System.Drawing.Size(126, 26);
             this.tbxChucVu.TabIndex = 28;
@@ -378,7 +377,7 @@ namespace QuanLySinhVien
             // 
             this.tbxID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxID.Location = new System.Drawing.Point(60, 54);
-            this.tbxID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxID.Margin = new System.Windows.Forms.Padding(2);
             this.tbxID.Name = "tbxID";
             this.tbxID.Size = new System.Drawing.Size(107, 26);
             this.tbxID.TabIndex = 12;
@@ -390,9 +389,9 @@ namespace QuanLySinhVien
             this.grbTaiKhoan.Controls.Add(this.lblMatKhau);
             this.grbTaiKhoan.Controls.Add(this.tbxTenDangNhap);
             this.grbTaiKhoan.Location = new System.Drawing.Point(42, 384);
-            this.grbTaiKhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbTaiKhoan.Margin = new System.Windows.Forms.Padding(2);
             this.grbTaiKhoan.Name = "grbTaiKhoan";
-            this.grbTaiKhoan.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbTaiKhoan.Padding = new System.Windows.Forms.Padding(2);
             this.grbTaiKhoan.Size = new System.Drawing.Size(672, 102);
             this.grbTaiKhoan.TabIndex = 27;
             this.grbTaiKhoan.TabStop = false;
@@ -407,7 +406,7 @@ namespace QuanLySinhVien
             this.Controls.Add(this.grbThongTinChung);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnChinhSua);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form9";
             this.Text = "Thông tin cá nhân";
             this.Load += new System.EventHandler(this.Form9_Load);

@@ -30,6 +30,7 @@ namespace QuanLySinhVien
                 {
                     getInformation();
                     tbxID.Enabled = false;
+                    tbxTenDangNhap.Enabled = false;
                     btnChinhSua.Text = "Sửa thông tin";
                 }
                 else
@@ -39,6 +40,7 @@ namespace QuanLySinhVien
                     tbxChucVu.Enabled = false;
                     cbxPhongBan.Enabled = false;
                     txbMatKhau.Enabled = false;
+                    tbxTenDangNhap.Enabled = false;
                     btnChinhSua.Text = "Sửa thông tin";
                 }
             }

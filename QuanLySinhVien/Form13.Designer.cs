@@ -251,6 +251,7 @@ namespace QuanLySinhVien
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form13";
             this.Text = "Thống kê sinh viên thực tập";
+            this.Load += new System.EventHandler(this.Form13_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
