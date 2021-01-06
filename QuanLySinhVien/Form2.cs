@@ -27,6 +27,7 @@ namespace QuanLySinhVien
                 cviecToolStripMenuItem1.Enabled = true;
                 tạoThôngBáoToolStripMenuItem.Enabled = true;
                 đăngXuâtToolStripMenuItem.Enabled = true;
+                cáNhânToolStripMenuItem.Visible = true;
             }
             if(c == 1)
             {
@@ -35,13 +36,14 @@ namespace QuanLySinhVien
                 cviecToolStripMenuItem1.Enabled = true;
                 tạoThôngBáoToolStripMenuItem.Enabled = true;
                 đăngXuâtToolStripMenuItem.Enabled = true;
-
+                cáNhânToolStripMenuItem.Visible = true;
             }
             if (c == 2)
             {
                 đăngNhậpToolStripMenuItem.Enabled = false;
                 cviecToolStripMenuItem1.Enabled = true;
                 đăngXuâtToolStripMenuItem.Enabled = true;
+                cáNhânToolStripMenuItem.Visible = true;
             }
         }
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
@@ -62,6 +64,7 @@ namespace QuanLySinhVien
             cviecToolStripMenuItem1.Enabled = false;
             tạoThôngBáoToolStripMenuItem.Enabled = false;
             đăngXuâtToolStripMenuItem.Enabled = false;
+            cáNhânToolStripMenuItem.Visible = false;
             FormPhongBan frm4 = new FormPhongBan();
             frm4.TopLevel = false;
             this.Controls.Add(frm4);
@@ -124,6 +127,18 @@ namespace QuanLySinhVien
             frm8.Dock = DockStyle.Fill;
             frm8.BringToFront();
             frm8.Show();
+        }
+
+        private void xemThôngBáoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form11 frm8 = new Form11();
+            frm8.TopLevel = false;
+            this.Controls.Add(frm8);
+            frm8.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            frm8.Dock = DockStyle.Fill;
+            frm8.BringToFront();
+            frm8.Show();
+
         }
     }
 }

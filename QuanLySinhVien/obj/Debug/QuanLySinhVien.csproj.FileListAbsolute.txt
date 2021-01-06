@@ -76,3 +76,6 @@ C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form6.r
 C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form7.resources
 C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form8.resources
 C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form9.resources
+C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form10.resources
+C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form11.resources
+C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.CustomCV.resources

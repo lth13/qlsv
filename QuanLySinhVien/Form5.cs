@@ -14,6 +14,7 @@ namespace QuanLySinhVien
     public partial class Form5 : Form
     {
         public static int iddong;
+        public static string lbl;
         public Form5()
         {
             InitializeComponent();
@@ -144,6 +145,7 @@ namespace QuanLySinhVien
             iddong = 0;
             Form9 frm9 = new Form9();
             frm9.Show();
+            lbl = "Thêm";
         }
     }
 }
