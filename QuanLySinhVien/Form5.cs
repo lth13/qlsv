@@ -147,5 +147,10 @@ namespace QuanLySinhVien
             frm9.Show();
             lbl = "Thêm";
         }
+
+        private void btnXemCongViec_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
