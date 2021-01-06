@@ -30,11 +30,13 @@ namespace QuanLySinhVien
         private void InitializeComponent()
         {
             this.listView1 = new System.Windows.Forms.ListView();
+            this.colID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colTenCongViec = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colMoTa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colThoiGianBatDau = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colThoiGianKetThuc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colTrangThai = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colIDNhanVien = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblPhongBan = new System.Windows.Forms.Label();
             this.cbxPhongBan = new System.Windows.Forms.ComboBox();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -46,11 +48,13 @@ namespace QuanLySinhVien
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colID,
             this.colTenCongViec,
             this.colMoTa,
             this.colThoiGianBatDau,
             this.colThoiGianKetThuc,
-            this.colTrangThai});
+            this.colTrangThai,
+            this.colIDNhanVien});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(38, 122);
             this.listView1.Margin = new System.Windows.Forms.Padding(2);
@@ -59,6 +63,11 @@ namespace QuanLySinhVien
             this.listView1.TabIndex = 10;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            // 
+            // colID
+            // 
+            this.colID.Text = "ID";
             // 
             // colTenCongViec
             // 
@@ -84,6 +93,10 @@ namespace QuanLySinhVien
             // 
             this.colTrangThai.Text = "Trạng thái";
             this.colTrangThai.Width = 90;
+            // 
+            // colIDNhanVien
+            // 
+            this.colIDNhanVien.Text = "ID Nhân Viên";
             // 
             // lblPhongBan
             // 
@@ -134,6 +147,7 @@ namespace QuanLySinhVien
             this.btnXoa.TabIndex = 13;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -145,6 +159,7 @@ namespace QuanLySinhVien
             this.btnSua.TabIndex = 12;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -156,6 +171,7 @@ namespace QuanLySinhVien
             this.btnThem.TabIndex = 11;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // Form8
             // 
@@ -192,5 +208,7 @@ namespace QuanLySinhVien
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.ColumnHeader colIDNhanVien;
+        private System.Windows.Forms.ColumnHeader colID;
     }
 }

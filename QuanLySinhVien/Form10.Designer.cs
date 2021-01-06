@@ -33,15 +33,16 @@ namespace QuanLySinhVien
             this.lblID = new System.Windows.Forms.Label();
             this.lblHoTen = new System.Windows.Forms.Label();
             this.lblNgaySinh = new System.Windows.Forms.Label();
-            this.tbxHoTen = new System.Windows.Forms.TextBox();
-            this.tbxNgaySinh = new System.Windows.Forms.TextBox();
+            this.tbxTenCV = new System.Windows.Forms.TextBox();
+            this.tbxMota = new System.Windows.Forms.TextBox();
             this.cbxPhongBan = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.tbxIDnv = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -89,30 +90,29 @@ namespace QuanLySinhVien
             this.lblNgaySinh.TabIndex = 17;
             this.lblNgaySinh.Text = "Mô Tả: ";
             // 
-            // tbxHoTen
+            // tbxTenCV
             // 
-            this.tbxHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxHoTen.Location = new System.Drawing.Point(216, 158);
-            this.tbxHoTen.Margin = new System.Windows.Forms.Padding(2);
-            this.tbxHoTen.Name = "tbxHoTen";
-            this.tbxHoTen.Size = new System.Drawing.Size(126, 26);
-            this.tbxHoTen.TabIndex = 19;
+            this.tbxTenCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxTenCV.Location = new System.Drawing.Point(216, 158);
+            this.tbxTenCV.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxTenCV.Name = "tbxTenCV";
+            this.tbxTenCV.Size = new System.Drawing.Size(126, 26);
+            this.tbxTenCV.TabIndex = 19;
             // 
-            // tbxNgaySinh
+            // tbxMota
             // 
-            this.tbxNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxNgaySinh.Location = new System.Drawing.Point(216, 215);
-            this.tbxNgaySinh.Margin = new System.Windows.Forms.Padding(2);
-            this.tbxNgaySinh.Name = "tbxNgaySinh";
-            this.tbxNgaySinh.Size = new System.Drawing.Size(126, 26);
-            this.tbxNgaySinh.TabIndex = 20;
+            this.tbxMota.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxMota.Location = new System.Drawing.Point(216, 215);
+            this.tbxMota.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxMota.Name = "tbxMota";
+            this.tbxMota.Size = new System.Drawing.Size(126, 26);
+            this.tbxMota.TabIndex = 20;
             // 
             // cbxPhongBan
             // 
             this.cbxPhongBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxPhongBan.FormattingEnabled = true;
             this.cbxPhongBan.Items.AddRange(new object[] {
-            "Tất cả",
             "Phòng kế toán",
             "Phòng sale",
             "Phòng kỹ thuật"});
@@ -144,57 +144,76 @@ namespace QuanLySinhVien
             this.label2.TabIndex = 23;
             this.label2.Text = "Ngày kết thúc : ";
             // 
-            // monthCalendar1
+            // dateTimePicker1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(347, 215);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 24;
-            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(557, 104);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 24;
             // 
-            // textBox1
+            // dateTimePicker2
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(556, 161);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 26);
-            this.textBox1.TabIndex = 25;
+            this.dateTimePicker2.CustomFormat = "yyyy-MM-dd";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(557, 163);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 25;
             // 
-            // textBox2
+            // btnThem
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(556, 104);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(126, 26);
-            this.textBox2.TabIndex = 26;
+            this.btnThem.Location = new System.Drawing.Point(369, 415);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 23);
+            this.btnThem.TabIndex = 26;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // monthCalendar2
+            // tbxIDnv
             // 
-            this.monthCalendar2.Location = new System.Drawing.Point(576, 215);
-            this.monthCalendar2.Name = "monthCalendar2";
-            this.monthCalendar2.TabIndex = 27;
+            this.tbxIDnv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxIDnv.Location = new System.Drawing.Point(557, 218);
+            this.tbxIDnv.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxIDnv.Name = "tbxIDnv";
+            this.tbxIDnv.Size = new System.Drawing.Size(126, 26);
+            this.tbxIDnv.TabIndex = 27;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(437, 221);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(112, 20);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "ID Nhân Viên: ";
             // 
             // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.monthCalendar2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.tbxIDnv);
+            this.Controls.Add(this.btnThem);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbxPhongBan);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.lblHoTen);
             this.Controls.Add(this.lblNgaySinh);
-            this.Controls.Add(this.tbxHoTen);
-            this.Controls.Add(this.tbxNgaySinh);
+            this.Controls.Add(this.tbxTenCV);
+            this.Controls.Add(this.tbxMota);
             this.Controls.Add(this.lblTitle);
             this.Name = "Form10";
             this.Text = "Form10";
+            this.Load += new System.EventHandler(this.Form10_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,14 +225,15 @@ namespace QuanLySinhVien
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblHoTen;
         private System.Windows.Forms.Label lblNgaySinh;
-        private System.Windows.Forms.TextBox tbxHoTen;
-        private System.Windows.Forms.TextBox tbxNgaySinh;
+        private System.Windows.Forms.TextBox tbxTenCV;
+        private System.Windows.Forms.TextBox tbxMota;
         private System.Windows.Forms.ComboBox cbxPhongBan;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.MonthCalendar monthCalendar2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.TextBox tbxIDnv;
+        private System.Windows.Forms.Label label3;
     }
 }

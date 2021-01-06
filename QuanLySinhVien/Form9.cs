@@ -15,6 +15,7 @@ namespace QuanLySinhVien
     {
         int idd;
         String lbl;
+        int quyen;
         public Form9()
         {
             InitializeComponent();
@@ -22,10 +23,24 @@ namespace QuanLySinhVien
         private void Form9_Load(object sender, EventArgs e)
         {
             idd = Form5.iddong;
+            quyen = Form5.quyen;
             if (idd != 0)
             {
-                getInformation();
-                tbxID.Enabled = true;
+                if (quyen == 0)
+                {
+                    getInformation();
+                    tbxID.Enabled = false;
+                    btnChinhSua.Text = "Sửa thông tin";
+                }
+                else
+                {
+                    getInformation();
+                    tbxID.Enabled = false;
+                    tbxChucVu.Enabled = false;
+                    cbxPhongBan.Enabled = false;
+                    txbMatKhau.Enabled = false;
+                    btnChinhSua.Text = "Sửa thông tin";
+                }
             }
             else
             {
@@ -171,7 +186,7 @@ namespace QuanLySinhVien
             Nvien ns = new Nvien();
             Connection cnn = new Connection();
             cnn.connect();
-            var query = "SELECT * FROM ThongTin WHERE UserID=" + idd + "";
+            var query = "SELECT * FROM ThongTin WHERE ID=" + idd + "";
             using (SqlDataReader SqlRead = cnn.getDataReader(query))
             {
                 while (SqlRead.Read())

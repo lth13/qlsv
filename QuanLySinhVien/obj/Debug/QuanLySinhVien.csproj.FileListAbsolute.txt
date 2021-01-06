@@ -85,3 +85,6 @@ C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form11.
 C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form9.resources
 C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form12.resources
 C:\Users\lthhn\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form13.resources
+C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form12.resources
+C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.Form13.resources
+C:\Users\chidu\source\repos\qlsv\QuanLySinhVien\obj\Debug\QuanLySinhVien.CustomCTCV.resources

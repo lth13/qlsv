@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLySinhVien
 {
-    partial class CustomCV
+    partial class CustomCTCV
     {
         /// <summary> 
         /// Required designer variable.
@@ -34,6 +34,8 @@ namespace QuanLySinhVien
             this.lbltgtao = new System.Windows.Forms.Label();
             this.lblngtao = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbltcv = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,16 +54,17 @@ namespace QuanLySinhVien
             // 
             // lblndcv
             // 
+            this.lblndcv.AutoSize = true;
             this.lblndcv.Location = new System.Drawing.Point(19, 134);
             this.lblndcv.Name = "lblndcv";
-            this.lblndcv.Size = new System.Drawing.Size(213, 62);
+            this.lblndcv.Size = new System.Drawing.Size(100, 13);
             this.lblndcv.TabIndex = 2;
             this.lblndcv.Text = "Nội dung công việc";
             // 
             // lbltgtao
             // 
             this.lbltgtao.AutoSize = true;
-            this.lbltgtao.Location = new System.Drawing.Point(19, 235);
+            this.lbltgtao.Location = new System.Drawing.Point(119, 208);
             this.lbltgtao.Name = "lbltgtao";
             this.lbltgtao.Size = new System.Drawing.Size(69, 13);
             this.lbltgtao.TabIndex = 4;
@@ -70,17 +73,19 @@ namespace QuanLySinhVien
             // lblngtao
             // 
             this.lblngtao.AutoSize = true;
-            this.lblngtao.Location = new System.Drawing.Point(19, 296);
+            this.lblngtao.Location = new System.Drawing.Point(119, 265);
             this.lblngtao.Name = "lblngtao";
-            this.lblngtao.Size = new System.Drawing.Size(53, 13);
+            this.lblngtao.Size = new System.Drawing.Size(59, 13);
             this.lblngtao.TabIndex = 5;
-            this.lblngtao.Text = "Người tạo";
+            this.lblngtao.Text = "Trạng Thái";
             this.lblngtao.Click += new System.EventHandler(this.lblngtao_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lbltcv);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -94,23 +99,41 @@ namespace QuanLySinhVien
             this.panel1.Size = new System.Drawing.Size(246, 362);
             this.panel1.TabIndex = 6;
             // 
+            // lbltcv
+            // 
+            this.lbltcv.AutoSize = true;
+            this.lbltcv.Location = new System.Drawing.Point(104, 51);
+            this.lbltcv.Name = "lbltcv";
+            this.lbltcv.Size = new System.Drawing.Size(78, 13);
+            this.lbltcv.TabIndex = 11;
+            this.lbltcv.Text = "Tên Công Việc";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(19, 51);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(79, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Tên công việc:";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(19, 265);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 13);
+            this.label4.Size = new System.Drawing.Size(58, 13);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Người tạo:";
+            this.label4.Text = "Trạng thái:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(19, 208);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 13);
+            this.label3.Size = new System.Drawing.Size(96, 13);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Thời gian tạo:";
+            this.label3.Text = "Thời gian kết thúc:";
             // 
             // label2
             // 
@@ -130,12 +153,12 @@ namespace QuanLySinhVien
             this.label1.TabIndex = 6;
             this.label1.Text = "Phòng ban:";
             // 
-            // CustomCV
+            // CustomCTCV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Name = "CustomCV";
+            this.Name = "CustomCTCV";
             this.Size = new System.Drawing.Size(253, 367);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -154,5 +177,7 @@ namespace QuanLySinhVien
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbltcv;
+        private System.Windows.Forms.Label label5;
     }
 }

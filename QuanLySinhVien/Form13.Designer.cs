@@ -56,9 +56,10 @@ namespace QuanLySinhVien
             // 
             this.lblThongKe.AutoSize = true;
             this.lblThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThongKe.Location = new System.Drawing.Point(321, 67);
+            this.lblThongKe.Location = new System.Drawing.Point(241, 54);
+            this.lblThongKe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblThongKe.Name = "lblThongKe";
-            this.lblThongKe.Size = new System.Drawing.Size(352, 25);
+            this.lblThongKe.Size = new System.Drawing.Size(285, 20);
             this.lblThongKe.TabIndex = 0;
             this.lblThongKe.Text = "THỐNG KÊ SINH VIÊN THỰC TẬP";
             // 
@@ -71,18 +72,21 @@ namespace QuanLySinhVien
             "Phòng sale",
             "Phòng kế toán",
             "Phòng kỹ thuật"});
-            this.comboBox1.Location = new System.Drawing.Point(315, 157);
+            this.comboBox1.Location = new System.Drawing.Point(236, 128);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(174, 30);
+            this.comboBox1.Size = new System.Drawing.Size(132, 25);
             this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // lblPhongBan
             // 
             this.lblPhongBan.AutoSize = true;
             this.lblPhongBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhongBan.Location = new System.Drawing.Point(193, 158);
+            this.lblPhongBan.Location = new System.Drawing.Point(145, 128);
+            this.lblPhongBan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPhongBan.Name = "lblPhongBan";
-            this.lblPhongBan.Size = new System.Drawing.Size(118, 24);
+            this.lblPhongBan.Size = new System.Drawing.Size(91, 18);
             this.lblPhongBan.TabIndex = 2;
             this.lblPhongBan.Text = "Phòng ban : ";
             // 
@@ -90,9 +94,10 @@ namespace QuanLySinhVien
             // 
             this.lblThoiGian.AutoSize = true;
             this.lblThoiGian.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThoiGian.Location = new System.Drawing.Point(495, 160);
+            this.lblThoiGian.Location = new System.Drawing.Point(371, 130);
+            this.lblThoiGian.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblThoiGian.Name = "lblThoiGian";
-            this.lblThoiGian.Size = new System.Drawing.Size(168, 24);
+            this.lblThoiGian.Size = new System.Drawing.Size(130, 18);
             this.lblThoiGian.TabIndex = 4;
             this.lblThoiGian.Text = "Thời gian (tháng) : ";
             // 
@@ -100,9 +105,10 @@ namespace QuanLySinhVien
             // 
             this.lblDaThucTap.AutoSize = true;
             this.lblDaThucTap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDaThucTap.Location = new System.Drawing.Point(64, 604);
+            this.lblDaThucTap.Location = new System.Drawing.Point(48, 491);
+            this.lblDaThucTap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDaThucTap.Name = "lblDaThucTap";
-            this.lblDaThucTap.Size = new System.Drawing.Size(110, 20);
+            this.lblDaThucTap.Size = new System.Drawing.Size(93, 17);
             this.lblDaThucTap.TabIndex = 6;
             this.lblDaThucTap.Text = "Đã thực tập : ";
             // 
@@ -110,9 +116,10 @@ namespace QuanLySinhVien
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(180, 607);
+            this.label4.Location = new System.Drawing.Point(135, 493);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 20);
+            this.label4.Size = new System.Drawing.Size(46, 17);
             this.label4.TabIndex = 7;
             this.label4.Text = "label4";
             // 
@@ -120,9 +127,10 @@ namespace QuanLySinhVien
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(198, 649);
+            this.label5.Location = new System.Drawing.Point(148, 527);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 20);
+            this.label5.Size = new System.Drawing.Size(46, 17);
             this.label5.TabIndex = 9;
             this.label5.Text = "label5";
             // 
@@ -130,9 +138,10 @@ namespace QuanLySinhVien
             // 
             this.lblDangThucTap.AutoSize = true;
             this.lblDangThucTap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDangThucTap.Location = new System.Drawing.Point(64, 646);
+            this.lblDangThucTap.Location = new System.Drawing.Point(48, 525);
+            this.lblDangThucTap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDangThucTap.Name = "lblDangThucTap";
-            this.lblDangThucTap.Size = new System.Drawing.Size(128, 20);
+            this.lblDangThucTap.Size = new System.Drawing.Size(109, 17);
             this.lblDangThucTap.TabIndex = 8;
             this.lblDangThucTap.Text = "Đang thực tập : ";
             // 
@@ -151,10 +160,10 @@ namespace QuanLySinhVien
             this.colBatDau,
             this.colKetThuc});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(64, 204);
-            this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.listView1.Location = new System.Drawing.Point(48, 166);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(913, 372);
+            this.listView1.Size = new System.Drawing.Size(686, 303);
             this.listView1.TabIndex = 10;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -218,16 +227,17 @@ namespace QuanLySinhVien
             this.dateTimePicker1.CustomFormat = "MM yyyy";
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(669, 158);
+            this.dateTimePicker1.Location = new System.Drawing.Point(502, 128);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(125, 30);
+            this.dateTimePicker1.Size = new System.Drawing.Size(95, 26);
             this.dateTimePicker1.TabIndex = 11;
             // 
             // Form13
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1075, 703);
+            this.ClientSize = new System.Drawing.Size(806, 571);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label5);
@@ -238,6 +248,7 @@ namespace QuanLySinhVien
             this.Controls.Add(this.lblPhongBan);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblThongKe);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form13";
             this.Text = "Thống kê sinh viên thực tập";
             this.ResumeLayout(false);
