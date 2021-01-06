@@ -154,5 +154,10 @@ namespace QuanLySinhVien
             frm13.BringToFront();
             frm13.Show();
         }
+
+        private void trangChủToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

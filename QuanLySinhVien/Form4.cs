@@ -74,5 +74,11 @@ namespace QuanLySinhVien
             }
             cnn.disconnect();
         }
+
+        private void btnChinhSua_Click(object sender, EventArgs e)
+        {
+            txbQuanLy.Enabled = true;
+            txbMoTa.Enabled = true;
+        }
     }
 }

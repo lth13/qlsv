@@ -20,7 +20,7 @@ namespace QuanLySinhVien
         {
             if (conn == null)
             {
-                conn = new SqlConnection(cn3);
+                conn = new SqlConnection(cn2);
             }
             if (conn.State == System.Data.ConnectionState.Closed)
             {
