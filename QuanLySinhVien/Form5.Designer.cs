@@ -42,6 +42,8 @@ namespace QuanLySinhVien
             this.colDiaChi = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colEmail = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colChucVu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBatDau = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colKetThuc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -49,8 +51,6 @@ namespace QuanLySinhVien
             this.tbxTimKiem = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnXemCongViec = new System.Windows.Forms.Button();
-            this.colBatDau = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colKetThuc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // lblTitle
@@ -68,6 +68,7 @@ namespace QuanLySinhVien
             this.cbxPhongBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxPhongBan.FormattingEnabled = true;
             this.cbxPhongBan.Items.AddRange(new object[] {
+            "Tất cả",
             "Phòng kế toán",
             "Phòng sale",
             "Phòng kỹ thuật"});
@@ -156,6 +157,16 @@ namespace QuanLySinhVien
             this.colChucVu.Text = "Chức vụ";
             this.colChucVu.Width = 120;
             // 
+            // colBatDau
+            // 
+            this.colBatDau.Text = "Thoi gian bat dau";
+            this.colBatDau.Width = 130;
+            // 
+            // colKetThuc
+            // 
+            this.colKetThuc.Text = "Thoi gian ket thuc";
+            this.colKetThuc.Width = 130;
+            // 
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -205,15 +216,15 @@ namespace QuanLySinhVien
             // 
             this.tbxTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxTimKiem.Location = new System.Drawing.Point(605, 111);
-            this.tbxTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.tbxTimKiem.Name = "tbxTimKiem";
-            this.tbxTimKiem.Size = new System.Drawing.Size(174, 30);
+            this.tbxTimKiem.Size = new System.Drawing.Size(225, 30);
             this.tbxTimKiem.TabIndex = 9;
             // 
             // btnTimKiem
             // 
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiem.Location = new System.Drawing.Point(840, 110);
+            this.btnTimKiem.Location = new System.Drawing.Point(837, 110);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(101, 34);
@@ -232,16 +243,6 @@ namespace QuanLySinhVien
             this.btnXemCongViec.Text = "Xem công việc";
             this.btnXemCongViec.UseVisualStyleBackColor = true;
             this.btnXemCongViec.Click += new System.EventHandler(this.btnXemCongViec_Click);
-            // 
-            // colBatDau
-            // 
-            this.colBatDau.Text = "Thoi gian bat dau";
-            this.colBatDau.Width = 130;
-            // 
-            // colKetThuc
-            // 
-            this.colKetThuc.Text = "Thoi gian ket thuc";
-            this.colKetThuc.Width = 130;
             // 
             // Form5
             // 

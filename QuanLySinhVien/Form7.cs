@@ -48,6 +48,7 @@ namespace QuanLySinhVien
             else
             {
                 MessageBox.Show("Cap nhat thanh cong!");
+                tbxThongBao.Clear();
             }
 
         }

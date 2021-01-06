@@ -33,7 +33,6 @@ namespace QuanLySinhVien
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lblPhongBan = new System.Windows.Forms.Label();
             this.lblThoiGian = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.lblDaThucTap = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@ namespace QuanLySinhVien
             this.colChucVu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colBatDau = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colKetThuc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // lblThongKe
@@ -95,29 +95,6 @@ namespace QuanLySinhVien
             this.lblThoiGian.Size = new System.Drawing.Size(168, 24);
             this.lblThoiGian.TabIndex = 4;
             this.lblThoiGian.Text = "Thời gian (tháng) : ";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"});
-            this.comboBox2.Location = new System.Drawing.Point(668, 155);
-            this.comboBox2.MaxDropDownItems = 4;
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 30);
-            this.comboBox2.TabIndex = 3;
             // 
             // lblDaThucTap
             // 
@@ -236,18 +213,28 @@ namespace QuanLySinhVien
             this.colKetThuc.Text = "Thoi gian ket thuc";
             this.colKetThuc.Width = 130;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "MM yyyy";
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(669, 158);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(125, 30);
+            this.dateTimePicker1.TabIndex = 11;
+            // 
             // Form13
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1075, 703);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblDangThucTap);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblDaThucTap);
             this.Controls.Add(this.lblThoiGian);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.lblPhongBan);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblThongKe);
@@ -264,7 +251,6 @@ namespace QuanLySinhVien
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label lblPhongBan;
         private System.Windows.Forms.Label lblThoiGian;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label lblDaThucTap;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -281,5 +267,6 @@ namespace QuanLySinhVien
         private System.Windows.Forms.ColumnHeader colChucVu;
         private System.Windows.Forms.ColumnHeader colBatDau;
         private System.Windows.Forms.ColumnHeader colKetThuc;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
